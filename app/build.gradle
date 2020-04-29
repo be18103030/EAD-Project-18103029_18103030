@@ -3,6 +3,9 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
         applicationId "com.ead_project.pdfscanner"
         minSdkVersion 24
         targetSdkVersion 28
