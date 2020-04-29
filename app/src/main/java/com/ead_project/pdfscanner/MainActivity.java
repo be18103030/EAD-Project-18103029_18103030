@@ -228,7 +228,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if ( ( requestCode == ScanConstants.PICKFILE_REQUEST_CODE || requestCode == ScanConstants.START_CAMERA_REQUEST_CODE ) &&
-                resultCode == Activity.RESULT_OK) {
+                resultCode == Activity.RESULT_OK){
 
             Uri uri = data.getExtras().getParcelable( ScanConstants.SCANNED_RESULT );
             boolean doScanMore = data.getExtras().getBoolean( ScanConstants.SCAN_MORE );
